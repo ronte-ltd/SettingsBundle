@@ -1,0 +1,20 @@
+{
+  "name": "ronte-ltd/settings-bundle",
+  "type": "symfony-bundle",
+  "version": "1.0.0",
+  "description": "Server for encrypted connections",
+  "authors": [
+    {
+      "name": "Grigorii Sokolik",
+      "email": "g.sokol99@g-sokol.info"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.7",
+    "psr/log": "^1.0",
+    "symfony/framework-bundle": "^3.1"
+  },
+  "autoload": {
+    "psr-4": { "RonteLtd\\SettingsBundle\\": "" }
+  }
+}
