@@ -17,7 +17,7 @@ interface SettingInterface
      *
      * @return string $name
      */
-    public function setName(): string;
+    public function getName(): string;
 
     /**
      * Set setting's value.
