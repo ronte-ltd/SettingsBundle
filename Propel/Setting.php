@@ -8,18 +8,18 @@ use RonteLtd\SettingsBundle\Model\SettingTrait;
 
 class Setting extends BaseSetting implements SettingInterface
 {
-  use SettingTrait;
+    use SettingTrait;
 
-  /** {@inheritdoc} */
-  public function setValue($value)
-  {
-    $this->getRawValue($this->valueToString($value));
-    return $this;
-  }
+    /** {@inheritdoc} */
+    public function setValue($value)
+    {
+        $this->getRawValue($this->valueToString($value));
+        return $this;
+    }
 
-  /** {@inheritdoc} */
-  public function getValue()
-  {
-    return $this->stringToValue($this->getRawValue());
-  }
+    /** {@inheritdoc} */
+    public function getValue()
+    {
+        return $this->stringToValue($this->getRawValue());
+    }
 }
