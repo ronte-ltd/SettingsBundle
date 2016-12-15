@@ -2,6 +2,8 @@
 
 namespace RonteLtd\SettingsBundle\CacheModel;
 
+use Doctrine\Common\Cache\Cache;
+
 use RonteLtd\SettingsBundle\Model\SettingManager as BaseSettingManager;
 use RonteLtd\SettingsBundle\Model\SettingInterface;
 
@@ -35,7 +37,7 @@ class SettingManager extends BaseSettingManager
     }
 
     /** {@inheritdoc} */
-    public function getSetting(string $name): SettingInterface
+    public function getSetting(string $name)
     {
         return $this->cache->fetch($this->createKey($name));
     }
@@ -49,7 +51,7 @@ class SettingManager extends BaseSettingManager
     /** {@inheritdoc} */
     public function updateSetting(SettingInterface $setting)
     {
-        $this->cache->save($this->createKey($name), $setting, $this->livetime);
+        $this->cache->save($this->createKey($setting->getName()), $setting, $this->livetime);
     }
 
     /** {@inheritdoc} */

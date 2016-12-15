@@ -23,7 +23,7 @@ class SettingManager extends BaseSettingManager
     }
 
     /** {@inheritdoc} */
-    public function getSetting(string $name): SettingInterface
+    public function getSetting(string $name)
     {
         $queryClass = $this->class.'Query';
         return $queryClass::create()

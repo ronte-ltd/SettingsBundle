@@ -5,6 +5,8 @@ namespace RonteLtd\SettingsBundle\Document;
 use Doctrine\ODM\MongoDB\DocumentManager;
 use Doctrine\ODM\MongoDB\DocumentRepository;
 
+use RonteLtd\SettingsBundle\Model\SettingInterface;
+
 use RonteLtd\SettingsBundle\Model\SettingManager as BaseSettingManager;
 
 class SettingManager extends BaseSettingManager

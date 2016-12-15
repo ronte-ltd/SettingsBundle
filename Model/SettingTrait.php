@@ -17,6 +17,6 @@ trait SettingTrait
 
     protected function valueToString($value): string
     {
-        return var_exports($value, true);
+        return var_export($value, true);
     }
 }

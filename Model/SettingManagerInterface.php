@@ -20,9 +20,9 @@ interface SettingManagerInterface
      * Get setting by name.
      *
      * @param string $name
-     * @return SettingInterface
+     * @return SettingInterface|null
      */
-    public function getSetting(string $name): SettingInterface;
+    public function getSetting(string $name);
 
     /**
      * Delete setting.
@@ -48,6 +48,13 @@ interface SettingManagerInterface
      * @see http://php.net/manual/en/function.gettype.php
      */
     public function setValue(string $name, $value, string $type = null);
+
+    /**
+     * Delete setting by name.
+     *
+     * @param string $name
+     */
+    public function unsetValue(string $name);
 
     /**
      * Get value by name.

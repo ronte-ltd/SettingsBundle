@@ -34,7 +34,7 @@ class SettingManager extends BaseSettingManager
     }
 
     /** {@inheritdoc} */
-    public function getSetting(string $name): SettingInterface
+    public function getSetting(string $name)
     {
         return $this->repository->findOneByName($name);
     }
