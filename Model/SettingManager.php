@@ -50,7 +50,7 @@ abstract class SettingManager implements SettingManagerInterface
      * @param mixed $type must be null or string containing type
      * @return string
      */
-    private function detectType($value, $type): string
+    protected function detectType($value, $type): string
     {
         if (is_string($type) && $type !== '') {
             return $type;
