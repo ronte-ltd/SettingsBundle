@@ -1,7 +1,7 @@
 {
     "name": "ronte-ltd/settings-bundle",
     "type": "symfony-bundle",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Server for encrypted connections",
     "authors": [
         {
